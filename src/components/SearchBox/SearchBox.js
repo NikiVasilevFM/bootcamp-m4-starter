@@ -10,6 +10,7 @@ class SearchBox extends Component {
     }
     searchBoxSubmitHandler = (e) => {
         e.preventDefault();
+        this.props.search(this.state.searchLine)
     }
     render() {
         const { searchLine } = this.state;
